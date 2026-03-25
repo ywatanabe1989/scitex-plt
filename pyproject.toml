@@ -40,6 +40,9 @@ dependencies = [
 [project.scripts]
 scitex-plt = "figrecipe._cli:main"
 
+[project.entry-points."scitex_dev.docs"]
+scitex-plt = "scitex_plt"
+
 [project.urls]
 Homepage = "https://github.com/ywatanabe1989/scitex-plt"
 Documentation = "https://github.com/ywatanabe1989/figrecipe#readme"
