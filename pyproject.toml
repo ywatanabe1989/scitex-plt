@@ -7,7 +7,7 @@ name = "scitex-plt"
 version = "0.24.0"
 description = "SciTeX plotting module (alias for figrecipe)"
 readme = "README.md"
-license = "AGPL-3.0"
+license = "AGPL-3.0-only"
 requires-python = ">=3.9"
 authors = [
     { name = "Yusuke Watanabe", email = "ywatanabe@scitex.ai" },
