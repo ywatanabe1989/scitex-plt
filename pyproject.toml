@@ -4,10 +4,10 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scitex-plt"
-version = "0.24.0"
+version = "0.24.2"
 description = "SciTeX plotting module (alias for figrecipe)"
 readme = "README.md"
-license = "AGPL-3.0"
+license = "AGPL-3.0-only"
 requires-python = ">=3.9"
 authors = [
     { name = "Yusuke Watanabe", email = "ywatanabe@scitex.ai" },
@@ -39,6 +39,9 @@ dependencies = [
 
 [project.scripts]
 scitex-plt = "figrecipe._cli:main"
+
+[project.entry-points."scitex_dev.docs"]
+scitex-plt = "scitex_plt"
 
 [project.urls]
 Homepage = "https://github.com/ywatanabe1989/scitex-plt"

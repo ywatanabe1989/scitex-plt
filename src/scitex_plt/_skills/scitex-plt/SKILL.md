@@ -1,5 +1,4 @@
 ---
-name: scitex-plt
 description: Publication-ready plotting — thin wrapper around figrecipe. See figrecipe skills for full documentation.
 allowed-tools: mcp__scitex__plt_*
 ---
