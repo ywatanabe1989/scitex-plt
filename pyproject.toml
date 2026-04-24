@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scitex-plt"
-version = "0.24.0"
+version = "0.24.1"
 description = "SciTeX plotting module (alias for figrecipe)"
 readme = "README.md"
 license = "AGPL-3.0-only"
