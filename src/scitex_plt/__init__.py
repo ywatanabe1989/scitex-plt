@@ -1,7 +1,11 @@
-"""scitex-plt - SciTeX plotting module (alias for figrecipe).
+"""scitex-plt — sys.modules alias for figrecipe.
 
-This package is a thin wrapper that re-exports figrecipe's public API.
-Install with: pip install scitex-plt
+scitex-plt is a thin namespace alias that makes `import scitex_plt` resolve
+to the figrecipe package. Identity-equal: `scitex_plt is figrecipe` → True.
+This matches the alias pattern used elsewhere in the SciTeX ecosystem
+(e.g. `scitex.gen` is `scitex_gen`).
+
+Install with: `pip install scitex-plt`
 
 Usage
 -----
@@ -11,8 +15,14 @@ Usage
 >>> plt.save(fig, "figure.png")
 """
 
-from figrecipe import *  # noqa: F401,F403
-from figrecipe import __all__ as _fr_all
-from figrecipe import __version__
+import sys as _sys
 
-__all__ = list(_fr_all) + ["__version__"]
+try:
+    import figrecipe as _real
+except ImportError as _e:
+    raise ImportError(
+        "scitex-plt requires the 'figrecipe' package. "
+        "Install with: pip install figrecipe  (or: pip install scitex-plt)"
+    ) from _e
+
+_sys.modules[__name__] = _real

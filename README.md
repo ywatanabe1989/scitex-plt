@@ -1,5 +1,16 @@
 # scitex-plt
 
+<!-- scitex-badges:start -->
+[![PyPI](https://img.shields.io/pypi/v/scitex-plt.svg)](https://pypi.org/project/scitex-plt/)
+[![Python](https://img.shields.io/pypi/pyversions/scitex-plt.svg)](https://pypi.org/project/scitex-plt/)
+[![Tests](https://github.com/ywatanabe1989/scitex-plt/actions/workflows/test.yml/badge.svg)](https://github.com/ywatanabe1989/scitex-plt/actions/workflows/test.yml)
+[![Install Test](https://github.com/ywatanabe1989/scitex-plt/actions/workflows/install-test.yml/badge.svg)](https://github.com/ywatanabe1989/scitex-plt/actions/workflows/install-test.yml)
+[![Coverage](https://codecov.io/gh/ywatanabe1989/scitex-plt/graph/badge.svg)](https://codecov.io/gh/ywatanabe1989/scitex-plt)
+[![Docs](https://readthedocs.org/projects/scitex-plt/badge/?version=latest)](https://scitex-plt.readthedocs.io/en/latest/)
+[![License: AGPL v3](https://img.shields.io/badge/license-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+<!-- scitex-badges:end -->
+
+
 **SciTeX plotting module** - an alias package for [figrecipe](https://github.com/ywatanabe1989/figrecipe).
 
 > **Interfaces:** Python ⭐⭐⭐ (primary) · CLI ⭐⭐ · MCP ⭐⭐⭐ · Skills ⭐⭐ · Hook — · HTTP —
