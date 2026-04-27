@@ -34,6 +34,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Visualization",
 ]
 dependencies = [
+    "pandas",
     "figrecipe>=0.24.0",
 ]
 
