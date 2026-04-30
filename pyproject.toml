@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scitex-plt"
-version = "0.24.2"
+version = "0.24.4"
 description = "SciTeX plotting module (alias for figrecipe)"
 readme = "README.md"
 license = "AGPL-3.0-only"
@@ -24,7 +24,6 @@ keywords = [
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: GNU Affero General Public License v3",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
@@ -34,7 +33,26 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Visualization",
 ]
 dependencies = [
+    "pandas",
     "figrecipe>=0.24.0",
+]
+
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+]
+docs = [
+    "sphinx>=7.0",
+    "sphinx-rtd-theme>=2.0",
+    "myst-parser>=2.0",
+    "sphinx-copybutton>=0.5",
+    "sphinx-autodoc-typehints>=1.25",
+]
+all = [
+    "scitex-plt[dev,docs]",
 ]
 
 [project.scripts]
@@ -48,6 +66,9 @@ Homepage = "https://github.com/ywatanabe1989/scitex-plt"
 Documentation = "https://github.com/ywatanabe1989/figrecipe#readme"
 Repository = "https://github.com/ywatanabe1989/scitex-plt.git"
 Issues = "https://github.com/ywatanabe1989/figrecipe/issues"
+
+[project.entry-points."scitex_dev.skills"]
+scitex-plt = "scitex_plt"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/scitex_plt"]
