@@ -15,6 +15,8 @@ Usage
 >>> plt.save(fig, "figure.png")
 """
 
+from __future__ import annotations
+
 import sys as _sys
 
 try:
