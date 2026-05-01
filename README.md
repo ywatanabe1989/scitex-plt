@@ -10,10 +10,7 @@
 [![License: AGPL v3](https://img.shields.io/badge/license-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 <!-- scitex-badges:end -->
 
-
 **SciTeX plotting module** - an alias package for [figrecipe](https://github.com/ywatanabe1989/figrecipe).
-
-> **Interfaces:** Python ⭐⭐⭐ (primary) · CLI ⭐⭐ · MCP ⭐⭐⭐ · Skills ⭐⭐ · Hook — · HTTP —
 
 ## Problem and Solution
 
