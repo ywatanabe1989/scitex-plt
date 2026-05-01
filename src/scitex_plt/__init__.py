@@ -15,6 +15,8 @@ Usage
 >>> plt.save(fig, "figure.png")
 """
 
+from __future__ import annotations
+
 import sys as _sys
 
 try:
@@ -26,3 +28,8 @@ except ImportError as _e:
     ) from _e
 
 _sys.modules[__name__] = _real
+
+# This module replaces itself in sys.modules with figrecipe (above).
+# `__all__` is declared for tooling (auditors, IDE introspection) — the
+# actual exports come from figrecipe after the swap.
+__all__: list[str] = []

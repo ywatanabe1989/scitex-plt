@@ -63,5 +63,3 @@ do I plot in scitex" find the alias and know where to look.
 - `figrecipe` — the actual implementation
 - `scitex-io` — `stx.io.save(fig, ...)` is the canonical figure save
   entry-point and writes the companion CSV automatically
-
-<!-- EOF -->
