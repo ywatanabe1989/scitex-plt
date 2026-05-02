@@ -63,7 +63,7 @@ scitex-plt = "scitex_plt"
 
 [project.urls]
 Homepage = "https://github.com/ywatanabe1989/scitex-plt"
-Documentation = "https://github.com/ywatanabe1989/figrecipe#readme"
+Documentation = "https://scitex-plt.readthedocs.io"
 Repository = "https://github.com/ywatanabe1989/scitex-plt.git"
 Issues = "https://github.com/ywatanabe1989/figrecipe/issues"
 
