@@ -1,6 +1,11 @@
 ---
 name: scitex-plt
-description: Thin namespace alias — `import scitex_plt` resolves to the `figrecipe` package via `sys.modules` aliasing. `scitex_plt is figrecipe` is identity-equal. Use when you want the figrecipe API but prefer the `scitex_*` import naming for consistency across the ecosystem (`scitex_io`, `scitex_stats`, `scitex_plt`). All real behavior lives in figrecipe — see its skill leaf for the publication-ready plotting API (`plt.subplots()` with auto CSV export, `ax.plot_line/scatter/heatmap`, `ax.set_xyt(xlabel, ylabel, title)`, `stx.io.save(fig, ...)` co-saving figure + CSV). Install with `pip install scitex-plt` (pulls figrecipe automatically).
+description: |
+  [WHAT] Thin namespace alias.
+  [WHEN] Use when you want the figrecipe API but prefer the `scitex_*` import naming for consistency across the ecosystem (`scitex_io`, `scitex_stats`, `scitex_plt`).
+  [HOW] `import scitex_plt` then call `plt.subplots()`.
+tags: [scitex-plt]
+allowed-tools: mcp__scitex__plt_*
 primary_interface: python
 interfaces:
   python: 3
@@ -10,9 +15,8 @@ interfaces:
   hook: 0
   http: 0
 canonical-location: scitex-plt/src/scitex_plt/_skills/scitex-plt/SKILL.md
-tags: [scitex-plt, scitex-package, figrecipe, alias, plotting]
-allowed-tools: mcp__scitex__plt_*
 ---
+
 
 > **Interfaces:** Python ⭐⭐⭐ (primary, via figrecipe) · CLI — · MCP — · Skills ⭐⭐ · Hook — · HTTP —
 
