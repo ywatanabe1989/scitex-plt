@@ -31,6 +31,13 @@ import figrecipe
 assert scitex_plt is figrecipe   # True
 ```
 
+## Sub-skills
+
+- [01_installation.md](01_installation.md) — pip install + verify
+- [02_quick-start.md](02_quick-start.md) — subplots → plot_line → save
+- [03_python-api.md](03_python-api.md) — public surface (= figrecipe's)
+- [04_cli-reference.md](04_cli-reference.md) — `scitex-plt` console entry
+
 ## Why an alias
 
 The ecosystem follows a strict `scitex_<name>` import convention
