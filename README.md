@@ -43,14 +43,16 @@ pip install scitex-plt
 This installs `figrecipe` as a dependency. `scitex-plt` is a `sys.modules` alias:
 `scitex_plt is figrecipe` evaluates to `True` after import.
 
-## Usage
+## Architecture
 
-```python
-import scitex_plt as plt
-
-fig, ax = plt.subplots()
-ax.plot([1, 2, 3], [1, 4, 9])
-plt.save(fig, "figure.png")
+```mermaid
+flowchart LR
+    user["user code\nimport scitex_plt as plt"] -->|"sys.modules alias"| fr["figrecipe\n(actual implementation)"]
+    fr --> mpl["matplotlib"]
+    fr --> save["stx.io.save(fig, 'plot.png')"]
+    save --> png[("plot.png")]
+    save --> csv[("plot.csv\n(auto-tracked data)")]
+    save --> yaml[("plot.yaml\n(recipe / params)")]
 ```
 
 ## 4 Interfaces
@@ -94,6 +96,29 @@ AI agents call `plt_line`, `plt_scatter`, `plt_stx_*` etc. from CSV column specs
 Loaded automatically by SciTeX-aware agents.
 
 </details>
+
+## Demo
+
+```mermaid
+flowchart LR
+    data[("session.csv")] --> load["stx.io.load"]
+    load --> arr["NumPy / DataFrame"]
+    arr --> ax["ax.plot_line(...)\nax.set_xyt(...)"]
+    ax --> fig["fig"]
+    fig --> savefig["stx.io.save(fig, 'plot.png')"]
+    savefig --> png[("plot.png")]
+    savefig --> sidecar[("plot.csv\nplot.yaml")]
+```
+
+## Quick Start
+
+```python
+import scitex_plt as plt
+
+fig, ax = plt.subplots()
+ax.plot([1, 2, 3], [1, 4, 9])
+plt.save(fig, "figure.png")  # writes figure.png + figure.csv
+```
 
 ## Part of SciTeX
 
