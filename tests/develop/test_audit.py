@@ -20,7 +20,7 @@ def test_audit_all_clean():
     try:
         audit_all_for_package(
             "scitex-plt",
-            skip_rules=("§1", "§1a", "§1d", "§5", "§6", "§10", "PS204"),
+            skip_rules=("§1", "§1a", "§1d", "§5", "§6", "§10", "PS-204"),
         )
     except TypeError:
         pytest.xfail("structural deferred; needs scitex-dev>=0.11.3")
