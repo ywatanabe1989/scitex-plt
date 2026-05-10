@@ -9,7 +9,7 @@
 <p align="center"><b>Publication-ready plotting with auto CSV export — sys.modules alias for figrecipe</b></p>
 
 <p align="center">
-  <a href="https://scitex-plt.readthedocs.io/">Full Documentation</a> · <code>pip install scitex-plt</code>
+  <a href="https://scitex-plt.readthedocs.io/">Full Documentation</a> · <code>uv pip install scitex-plt[all]</code>
 </p>
 
 <!-- scitex-badges:start -->
