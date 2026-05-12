@@ -17,7 +17,6 @@
   <a href="https://pypi.org/project/scitex-plt/"><img src="https://img.shields.io/pypi/v/scitex-plt.svg" alt="PyPI"></a>
   <a href="https://pypi.org/project/scitex-plt/"><img src="https://img.shields.io/pypi/pyversions/scitex-plt.svg" alt="Python"></a>
   <a href="https://github.com/ywatanabe1989/scitex-plt/actions/workflows/test.yml"><img src="https://github.com/ywatanabe1989/scitex-plt/actions/workflows/test.yml/badge.svg" alt="Tests"></a>
-  <a href="https://github.com/ywatanabe1989/scitex-plt/actions/workflows/install-test.yml"><img src="https://github.com/ywatanabe1989/scitex-plt/actions/workflows/install-test.yml/badge.svg" alt="Install Test"></a>
   <a href="https://codecov.io/gh/ywatanabe1989/scitex-plt"><img src="https://codecov.io/gh/ywatanabe1989/scitex-plt/graph/badge.svg" alt="Coverage"></a>
   <a href="https://scitex-plt.readthedocs.io/en/latest/"><img src="https://readthedocs.org/projects/scitex-plt/badge/?version=latest" alt="Docs"></a>
   <a href="https://www.gnu.org/licenses/agpl-3.0"><img src="https://img.shields.io/badge/license-AGPL_v3-blue.svg" alt="License: AGPL v3"></a>

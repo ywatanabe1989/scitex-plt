@@ -1,0 +1,9 @@
+# scitex-dev audit-tool whitelist for scitex-plt.
+#
+# Tracked in git so the audit corpus is reproducible from a clean
+# clone. See _skills/general/01_ecosystem_06_local-state-directories.md.
+
+audit:
+  root-whitelist:
+    files:
+      - codecov.yml

@@ -73,3 +73,8 @@ scitex-plt = "scitex_plt"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/scitex_plt"]
+
+[tool.coverage.run]
+parallel = true
+source = ["scitex_plt"]
+concurrency = ["multiprocessing", "thread"]
