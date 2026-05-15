@@ -21,8 +21,8 @@
 <p align="center">
   <a href="https://github.com/ywatanabe1989/scitex-plt/actions/workflows/pytest-matrix-on-ubuntu-py3-11-3-12-3-13.yml"><img src="https://img.shields.io/github/actions/workflow/status/ywatanabe1989/scitex-plt/pytest-matrix-on-ubuntu-py3-11-3-12-3-13.yml?branch=develop&label=tests" alt="tests"></a>
   <a href="https://github.com/ywatanabe1989/scitex-plt/actions/workflows/import-smoke-on-ubuntu-py3-12.yml"><img src="https://img.shields.io/github/actions/workflow/status/ywatanabe1989/scitex-plt/import-smoke-on-ubuntu-py3-12.yml?branch=develop&label=install-check" alt="install-check"></a>
+  <a href="https://github.com/ywatanabe1989/scitex-plt/actions/workflows/newb.yml"><img src="https://img.shields.io/github/actions/workflow/status/ywatanabe1989/scitex-plt/newb.yml?branch=develop&label=quality" alt="quality"></a>
   <a href="https://codecov.io/gh/ywatanabe1989/scitex-plt"><img src="https://img.shields.io/codecov/c/github/ywatanabe1989/scitex-plt/develop?label=cov" alt="cov"></a>
-  <a href="https://www.gnu.org/licenses/agpl-3.0"><img src="https://img.shields.io/badge/license-AGPL_v3-blue.svg" alt="license"></a>
 </p>
 <!-- scitex-badges:end -->
 
