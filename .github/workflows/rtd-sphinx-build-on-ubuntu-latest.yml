@@ -1,4 +1,4 @@
-name: Docs
+name: docs
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
 
 jobs:
   sphinx:
+    name: rtd-sphinx-build-on-ubuntu-latest
     runs-on: ubuntu-latest
     permissions:
       contents: write
