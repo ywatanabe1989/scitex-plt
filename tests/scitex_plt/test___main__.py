@@ -12,9 +12,14 @@ import importlib
 import pytest
 
 
-def test_import_scitex_plt():
-    """Top-level package imports."""
-    mod = importlib.import_module("scitex_plt")
+def test_scitex_plt_top_level_module_imports_cleanly():
+    # Arrange
+    module_name = "scitex_plt"
+
+    # Act
+    mod = importlib.import_module(module_name)
+
+    # Assert
     assert mod is not None
 
 
@@ -33,31 +38,63 @@ def test_import_scitex_plt():
         "signature",
     ],
 )
-def test_public_api_exposes(name):
-    """Documented public-API symbols are accessible from the top namespace."""
+def test_public_api_exposes_documented_symbol_at_top_level(name):
+    # Arrange
     import scitex_plt
 
-    assert hasattr(scitex_plt, name), f"scitex_plt missing public symbol: {name}"
+    # Act
+    has_symbol = hasattr(scitex_plt, name)
+
+    # Assert
+    assert has_symbol is True, f"scitex_plt missing public symbol: {name}"
 
 
-def test_subplots_returns_fig_axes():
-    """scitex_plt.subplots returns a matplotlib-like (fig, ax) pair."""
+def test_subplots_returns_figure_with_savefig_attribute():
+    # Arrange
     matplotlib = pytest.importorskip("matplotlib")
     matplotlib.use("Agg")
     import scitex_plt
 
-    fig, ax = scitex_plt.subplots()
-    assert fig is not None
-    assert ax is not None
+    # Act
+    fig, _ax = scitex_plt.subplots()
+
+    # Assert
+    assert hasattr(fig, "savefig")
 
 
-def test_list_presets_runs():
-    """Preset listing helpers don't blow up on empty / default state."""
+def test_subplots_returns_axes_with_plot_attribute():
+    # Arrange
+    matplotlib = pytest.importorskip("matplotlib")
+    matplotlib.use("Agg")
     import scitex_plt
 
-    # Both helpers exist; calling them should not raise.
-    scitex_plt.list_presets()
-    scitex_plt.list_graph_presets()
+    # Act
+    _fig, ax = scitex_plt.subplots()
+
+    # Assert
+    assert hasattr(ax, "plot")
+
+
+def test_list_presets_returns_list_of_known_preset_names():
+    # Arrange
+    import scitex_plt
+
+    # Act
+    presets = scitex_plt.list_presets()
+
+    # Assert
+    assert isinstance(presets, list)
+
+
+def test_list_graph_presets_returns_mapping_of_preset_descriptions():
+    # Arrange
+    import scitex_plt
+
+    # Act
+    graph_presets = scitex_plt.list_graph_presets()
+
+    # Assert
+    assert isinstance(graph_presets, dict)
 
 
 if __name__ == "__main__":
