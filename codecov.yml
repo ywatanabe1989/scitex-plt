@@ -1,0 +1,21 @@
+codecov:
+  require_ci_to_pass: false
+  branch: develop
+
+coverage:
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 1%
+    patch:
+      default:
+        target: 80%
+
+ignore:
+  - "src/scitex_plt/_sphinx_html/**"
+  - "src/scitex_plt/_skills/**"
+  - "tests/**"
+  - "examples/**"
+
+comment: false
