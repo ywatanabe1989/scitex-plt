@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scitex-plt"
-version = "0.24.4"
+version = "0.24.6"
 description = "SciTeX plotting module (alias for figrecipe)"
 readme = "README.md"
 license = "AGPL-3.0-only"
@@ -43,6 +43,7 @@ dev = [
     "pytest",
     "pytest-cov",
     "ruff",
+    "scitex-dev>=0.11.7",
 ]
 docs = [
     "sphinx>=7.0",
@@ -63,7 +64,7 @@ scitex-plt = "scitex_plt"
 
 [project.urls]
 Homepage = "https://github.com/ywatanabe1989/scitex-plt"
-Documentation = "https://github.com/ywatanabe1989/figrecipe#readme"
+Documentation = "https://scitex-plt.readthedocs.io"
 Repository = "https://github.com/ywatanabe1989/scitex-plt.git"
 Issues = "https://github.com/ywatanabe1989/figrecipe/issues"
 
@@ -72,3 +73,8 @@ scitex-plt = "scitex_plt"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/scitex_plt"]
+
+[tool.coverage.run]
+parallel = true
+source = ["scitex_plt"]
+concurrency = ["multiprocessing", "thread"]
