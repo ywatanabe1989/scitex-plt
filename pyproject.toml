@@ -78,3 +78,8 @@ packages = ["src/scitex_plt"]
 parallel = true
 source = ["scitex_plt"]
 concurrency = ["multiprocessing", "thread"]
+
+dependencies = [
+    "scitex-dev>=0.17.8",
+    "click>=8.1",
+]
