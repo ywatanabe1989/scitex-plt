@@ -22,3 +22,5 @@ docs/sphinx/_build/
 .scitex/dev/*
 !.scitex/dev/config.yaml
 !.scitex/dev/cli-audit-dict.yaml
+/.worktrees/
+.venv/
