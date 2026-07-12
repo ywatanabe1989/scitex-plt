@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scitex-plt"
-version = "0.24.6"
+version = "0.24.7"
 description = "SciTeX plotting module (alias for figrecipe)"
 readme = "README.md"
 license = "AGPL-3.0-only"
@@ -34,7 +34,7 @@ classifiers = [
 ]
 dependencies = [
     "pandas",
-    "figrecipe>=0.24.0",
+    "figrecipe>=0.30.0",
 ]
 
 
