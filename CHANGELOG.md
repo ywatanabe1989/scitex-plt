@@ -7,6 +7,18 @@ versions follow [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.24.8]
+
+### Fixed
+- Bumped the `figrecipe` dependency floor `>=0.30.0` → `>=0.31.0`. figrecipe
+  0.31.0 fixes a 500 on the GUI's `/api/files` endpoint: a symlinked file
+  escaping the project root (e.g. `node_modules/@scitex/ui`) made the backend
+  correctly refuse the read, but the file-tree walker didn't catch that and
+  took down the entire tree — so `scitex-plt gui serve` rendered but its file
+  browser was dead. 0.31.0 also fixes `imshow` tick labels being dropped on
+  record/replay, and adds the `comma_format` tick formatter and the
+  `ax.stx_annotate_n()` sample-size annotation helper.
+
 ## [0.24.7]
 
 ### Fixed
