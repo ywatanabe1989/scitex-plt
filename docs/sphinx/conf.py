@@ -93,7 +93,7 @@ html_short_title = project
 
 html_context = {
     "display_github": True,
-    "github_user": "ywatanabe1989",
+    "github_user": "scitex-ai",
     "github_repo": "scitex-plt",
     "github_version": "develop",
     "conf_py_path": "/docs/sphinx/",
